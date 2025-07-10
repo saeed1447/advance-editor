@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Napar Advance Editor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Napar Advance Editor</h1>
+  <input type="file" id="imageLoader" name="imageLoader"/>
+  <canvas id="imageCanvas"></canvas>
+  <div id="controls">
+    <button onclick="applyFilter('vivid')">Vivid Portrait</button>
+    <button onclick="applyFilter('grayscale')">Grayscale</button>
+    <button onclick="applyFilter('sepia')">Sepia</button>
+    <button onclick="removeBackground()">Remove Background</button>
+    <button onclick="downloadImage()">Download</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/caman@4.1.2/dist/caman.full.min.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>
